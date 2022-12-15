@@ -29,4 +29,4 @@ mongoose.connect( process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopo
   .then(() => app.listen(PORT, () => console.log(`Server Running on Port: ${PORT}`)))
   .catch((error) => console.log(`did not connect`));
 
-//mongoose.set('useFindAndModify', false);
+mongoose.set('useFindAndModify', false);
